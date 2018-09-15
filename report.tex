@@ -1,0 +1,60 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 6CCS3PRJ Final Year Individual Project Report
+% luke.day@kcl.ac.uk
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{informatics-report}
+\usepackage{color}
+\usepackage[square,sort,comma,numbers]{natbib} %References
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Front Matter - project title, name, supervisor name and date
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{6CCS3PRJ Final Year\\\vspace{0.2cm}Individual Project Report Title}
+\author{Your Name}
+\studentID{000000}
+\supervisor{Name}
+
+\date{\today}
+
+\abstractFile{FrontMatter/abstract.tex}
+\ackFile{FrontMatter/acknowledgements.tex} %Remove line if you do not want acknowledgements
+
+\begin{document}
+\createFrontMatter
+\onehalfspacing
+\tableofcontents
+\doublespacing
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Report Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% You can write each chapter directly here or in a separate .tex file and use the include command.
+
+\chapter{Introduction}
+This is one of the most important components of the report. It should begin with a clear statement of what the project is about so that the nature and scope of the project can be understood by a lay reader. It should summarise everything that you set out to achieve, provide a clear summary of the project's background and relevance to other work, and give pointers to the remaining sections of the report, which will contain the bulk of the technical material.
+
+\section{Report Structure}
+
+\include{Chapters/Background}
+\include{Chapters/Body}
+\include{Chapters/DesignSpecification}
+\include{Chapters/Implementation}
+\include{Chapters/ProfessionalIssues}
+\include{Chapters/Evaluation}
+\include{Chapters/Conclusion}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% References
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{plain}
+\bibliography{references}
+\addcontentsline{toc}{section}{Bibliography}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Appendices
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendix
+\include{Appendices/appendix}
+\include{Appendices/UserGuide}
+\include{Appendices/SourceCode}
+\end{document}
